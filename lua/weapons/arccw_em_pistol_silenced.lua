@@ -17,7 +17,7 @@ SWEP.SlotPos		=	0
 SWEP.UseHands		=	false
 SWEP.ViewModelFOV	=	75
 SWEP.ViewModel		=	"models/weapons/w_pist_m1911_silencer.mdl"
-SWEP.WorldModel		=	"models/weapons/w_pist_usp.mdl"
+SWEP.WorldModel		=	"models/weapons/w_pist_m1911_silencer.mdl"
 SWEP.ActivePos = Vector(4.5, 20, -8.5)
 SWEP.ActiveAng = Angle(0, 0, 0)
 

@@ -17,7 +17,7 @@ SWEP.SlotPos		=	0
 SWEP.UseHands		=	false
 SWEP.ViewModelFOV	=	75
 SWEP.ViewModel		=	"models/weapons/w_pist_saa.mdl"
-SWEP.WorldModel		=	"models/weapons/w_pist_usp.mdl"
+SWEP.WorldModel		=	"models/weapons/w_pist_saa.mdl"
 SWEP.ActivePos = Vector(-4.5, -11, -2)
 SWEP.ActiveAng = Angle(0, 180, 0)
 
@@ -39,7 +39,7 @@ SWEP.BodyDamageMults	=	ArcCW.EM.BodyDamageMults
 SWEP.Recoil			=	1.0
 SWEP.RecoilSide		=	0.5
 
-SWEP.ShellModel		=	"models/shells/shell_9mm.mdl"
+SWEP.ShellModel		=	"models/shells/shell_556.mdl"
 SWEP.ShellScale		=	1.334
 SWEP.ShellPitch		=	100
 SWEP.ShellSounds	=	"autocheck"
@@ -55,7 +55,7 @@ SWEP.JumpDispersion		=	1000
 SWEP.AccuracyMOA		=	1
 SWEP.SightTime			=	0.2
 SWEP.Primary.ClipSize	=	6
-SWEP.ChamberSize		=	1
+SWEP.ChamberSize		=	0
 SWEP.MuzzleEffect		=	"muzzleflash_m14"
 SWEP.NoFlash			=	true--ArcCW.CSX.NoFlash
 
@@ -81,7 +81,7 @@ SWEP.ShootPitch				=	100
 SWEP.ShootPitchVariation	=	0--.05
 
 SWEP.MuzzleEffectAttachment	=	1
-SWEP.CaseEffectAttachment	=	2
+SWEP.CaseEffectAttachment	=	1
 SWEP.CamAttachment			=	nil
 
 SWEP.Attachments = {}
@@ -132,23 +132,31 @@ SWEP.Animations = {
 	},
 	["fire"] = {
 		Source = "fire",
-		ShellEjectAt = 0,
 	},
-	["reload"] = {
+	["sgreload_start"] = {
 		Source = "reload",
-		Time = 2,
-		MinProgress = 1,
+		Time = 0.25,
 		SoundTable = {
 		}
 	},
-	["reload_empty"] = {
-		Source = "reload_empty",
-		Time = 2,
-		MinProgress = 1,
+	["sgreload_insert"] = {
+		Source = "reload",
+		Time = 0.33,
+		MinProgress = 0.1,
+		ShellEjectAt = 0,
+		SoundTable = {
+			{ s = "weapons/357/357_reload3.wav", t = 0.0 },
+			{ s = "weapons/357/357_reload4.wav", t = 0.2 },
+		}
+	},
+	["sgreload_finish"] = {
+		Source = "reload",
+		Time = 0.25,
 		SoundTable = {
 		}
 	},
 }
+SWEP.ShotgunReload = true
 
 SWEP.Attachments = {
 }

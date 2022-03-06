@@ -17,7 +17,7 @@ SWEP.SlotPos		=	0
 SWEP.UseHands		=	false
 SWEP.ViewModelFOV	=	75
 SWEP.ViewModel		=	"models/weapons/w_shot_sxs_shorty.mdl"
-SWEP.WorldModel		=	"models/weapons/w_shot_shorty.mdl"
+SWEP.WorldModel		=	"models/weapons/w_shot_sxs_shorty.mdl"
 SWEP.ActivePos = Vector(-4, -6, 0)
 SWEP.ActiveAng = Angle(10, 183, 0)
 
@@ -56,7 +56,7 @@ SWEP.JumpDispersion		=	1000
 SWEP.AccuracyMOA		=	80
 SWEP.SightTime			=	0.2
 SWEP.Primary.ClipSize	=	2
-SWEP.ChamberSize		=	1
+SWEP.ChamberSize		=	0
 SWEP.MuzzleEffect		=	"muzzleflash_shotgun"
 SWEP.NoFlash			=	true--ArcCW.CSX.NoFlash
 
@@ -135,21 +135,30 @@ SWEP.Animations = {
 		Source = "fire",
 		ShellEjectAt = 0,
 	},
-	["reload"] = {
+	["sgreload_start"] = {
 		Source = "reload",
-		Time = 1.5,
-		MinProgress = 0.75,
+		Time = 0.3,
 		SoundTable = {
+			{ s = "weapons/smg1/switch_burst.wav", t = 0.0 }
 		}
 	},
-	["reload_empty"] = {
-		Source = "reload_empty",
-		Time = 1.5,
-		MinProgress = 0.75,
+	["sgreload_insert"] = {
+		Source = "reload",
+		Time = 0.2,
+		MinProgress = 0.1,
+		ShellEjectAt = 0,
+		SoundTable = {
+			{ s = "weapons/shotgun/shotgun_reload2.wav", t = 0.0 },
+		}
+	},
+	["sgreload_finish"] = {
+		Source = "reload",
+		Time = 0.2,
 		SoundTable = {
 		}
 	},
 }
+SWEP.ShotgunReload = true
 
 SWEP.Attachments = {
 }

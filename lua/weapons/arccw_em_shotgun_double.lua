@@ -16,16 +16,16 @@ SWEP.SlotPos		=	0
 
 SWEP.UseHands		=	false
 SWEP.ViewModelFOV	=	75
-SWEP.ViewModel		=	"models/weapons/w_rif_aks74u.mdl"
-SWEP.WorldModel		=	"models/weapons/w_mp40.mdl"
-SWEP.ActivePos = Vector(4.5, 12, -11)
-SWEP.ActiveAng = Angle(0, 0, 0)
+SWEP.ViewModel		=	"models/weapons/w_shot_sxs.mdl"
+SWEP.WorldModel		=	"models/weapons/w_shot_sxs.mdl"
+SWEP.ActivePos = Vector(-3, -4, -2)
+SWEP.ActiveAng = Angle(0, 180, 0)
 
-SWEP.HolsterPos = Vector(2.5, 13, -11)
-SWEP.HolsterAng = Angle(-5, 0, 0)
+SWEP.HolsterPos = Vector(2.5, 12, -8)
+SWEP.HolsterAng = Angle(-5, 180, 0)
 
-SWEP.ReloadPos = Vector(4.5, 12, -11)
-SWEP.ReloadAng = Angle(-25, 0, 0)
+SWEP.ReloadPos = Vector(-3, -4, -3)
+SWEP.ReloadAng = Angle(40, 180, 0)
 SWEP.DefaultBodygroups = "00000000"
 
 SWEP.Damage				=	20
@@ -49,10 +49,14 @@ SWEP.HoldtypeActive		= "pistol"
 SWEP.HoldtypeSights		= "revolver"
 SWEP.AnimShoot			= ACT_HL2MP_GESTURE_RANGE_ATTACK_PISTOL
 
-SWEP.AccuracyMOA		=	0
+SWEP.Num				=	8
+SWEP.HipDispersion		=	400
+SWEP.MoveDispersion		=	400
+SWEP.JumpDispersion		=	1000
+SWEP.AccuracyMOA		=	40
 SWEP.SightTime			=	0.2
-SWEP.Primary.ClipSize	=	35
-SWEP.ChamberSize		=	1
+SWEP.Primary.ClipSize	=	2
+SWEP.ChamberSize		=	0
 SWEP.MuzzleEffect		=	"muzzleflash_mp5"
 SWEP.NoFlash			=	true--ArcCW.CSX.NoFlash
 
@@ -86,17 +90,17 @@ SWEP.AttachmentElements = {}
 SWEP.Animations = {}
 
 SWEP.IronSightStruct = {
-	Pos = Vector(3, 10, -10.5),
-	Ang = Angle(0, 0, 0),
+	Pos = Vector(-2, -2, -4),
+	Ang = Angle(0, 180, 0),
 	ViewModelFOV = 75,
 	Magnification = 0.7,
 	CrosshairInSights = true,
 }
 
-SWEP.Delay = (60/600)
+SWEP.Delay = (60/1200)
 SWEP.Firemodes = {
 	{
-		Mode = 2,
+		Mode = 1,
 	},
 	{
 		Mode = 0,
@@ -131,21 +135,30 @@ SWEP.Animations = {
 		Source = "fire",
 		ShellEjectAt = 0,
 	},
-	["reload"] = {
+	["sgreload_start"] = {
 		Source = "reload",
-		Time = 1,
-		MinProgress = 0.5,
+		Time = 0.3,
 		SoundTable = {
+			{ s = "weapons/smg1/switch_burst.wav", t = 0.0 }
 		}
 	},
-	["reload_empty"] = {
-		Source = "reload_empty",
-		Time = 1,
-		MinProgress = 0.5,
+	["sgreload_insert"] = {
+		Source = "reload",
+		Time = 0.2,
+		MinProgress = 0.1,
+		ShellEjectAt = 0,
+		SoundTable = {
+			{ s = "weapons/shotgun/shotgun_reload2.wav", t = 0.0 },
+		}
+	},
+	["sgreload_finish"] = {
+		Source = "reload",
+		Time = 0.2,
 		SoundTable = {
 		}
 	},
 }
+SWEP.ShotgunReload = true
 
 SWEP.Attachments = {
 }

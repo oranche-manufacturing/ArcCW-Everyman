@@ -17,7 +17,7 @@ SWEP.SlotPos		=	0
 SWEP.UseHands		=	false
 SWEP.ViewModelFOV	=	75
 SWEP.ViewModel		=	"models/weapons/w_shot_xm1014.mdl"
-SWEP.WorldModel		=	"models/weapons/w_mp40.mdl"
+SWEP.WorldModel		=	"models/weapons/w_shot_xm1014.mdl"
 SWEP.ActivePos = Vector(4.5, 12, -11)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
@@ -49,9 +49,13 @@ SWEP.HoldtypeActive		= "pistol"
 SWEP.HoldtypeSights		= "revolver"
 SWEP.AnimShoot			= ACT_HL2MP_GESTURE_RANGE_ATTACK_PISTOL
 
-SWEP.AccuracyMOA		=	0
+SWEP.Num				=	14
+SWEP.HipDispersion		=	400
+SWEP.MoveDispersion		=	400
+SWEP.JumpDispersion		=	1000
+SWEP.AccuracyMOA		=	60
 SWEP.SightTime			=	0.2
-SWEP.Primary.ClipSize	=	35
+SWEP.Primary.ClipSize	=	6
 SWEP.ChamberSize		=	1
 SWEP.MuzzleEffect		=	"muzzleflash_mp5"
 SWEP.NoFlash			=	true--ArcCW.CSX.NoFlash

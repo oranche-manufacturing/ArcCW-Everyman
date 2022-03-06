@@ -17,7 +17,7 @@ SWEP.SlotPos		=	0
 SWEP.UseHands		=	false
 SWEP.ViewModelFOV	=	75
 SWEP.ViewModel		=	"models/weapons/w_rif_fal.mdl"
-SWEP.WorldModel		=	"models/weapons/w_mp40.mdl"
+SWEP.WorldModel		=	"models/weapons/w_rif_fal.mdl"
 SWEP.ActivePos = Vector(4.5, 15, -10)
 SWEP.ActiveAng = Angle(0, 0, 0)
 

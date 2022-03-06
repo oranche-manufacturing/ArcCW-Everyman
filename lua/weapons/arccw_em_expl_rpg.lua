@@ -51,8 +51,8 @@ SWEP.AnimShoot			= ACT_HL2MP_GESTURE_RANGE_ATTACK_PISTOL
 
 SWEP.AccuracyMOA		=	0
 SWEP.SightTime			=	0.2
-SWEP.Primary.ClipSize	=	35
-SWEP.ChamberSize		=	1
+SWEP.Primary.ClipSize	=	1
+SWEP.ChamberSize		=	0
 SWEP.MuzzleEffect		=	"muzzleflash_mp5"
 SWEP.NoFlash			=	true--ArcCW.CSX.NoFlash
 
@@ -93,10 +93,10 @@ SWEP.IronSightStruct = {
 	CrosshairInSights = true,
 }
 
-SWEP.Delay = (60/600)
+SWEP.Delay = (60/30)
 SWEP.Firemodes = {
 	{
-		Mode = 2,
+		Mode = 1,
 	},
 	{
 		Mode = 0,

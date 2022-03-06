@@ -74,7 +74,7 @@ SWEP.DistantShootSound	=	{
 }
 
 SWEP.ShootVol				=	90
-SWEP.ShootPitch				=	100
+SWEP.ShootPitch				=	90
 SWEP.ShootPitchVariation	=	0--.05
 
 SWEP.MuzzleEffectAttachment	=	1

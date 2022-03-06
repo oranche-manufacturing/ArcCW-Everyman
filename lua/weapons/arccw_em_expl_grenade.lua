@@ -4,7 +4,7 @@ SWEP.Spawnable		=	true
 SWEP.Category		=	"ArcCW - Everyman"
 SWEP.PrintName		=	"Explosive, grenade"
 SWEP.Trivia_Class			= "Explosive weapon"
-SWEP.Trivia_Desc			= ""
+SWEP.Trivia_Desc			= "A six-shot grenade launcher launching high-explosive impact grenades. Useful against targets behind cover or in open areas. Does do damage against vehicles, but not as much as a dedicated rocket launcher or anti-material rifle."
 SWEP.Trivia_Manufacturer	= nil
 SWEP.Trivia_Calibre			= nil
 SWEP.Trivia_Mechanism		= nil
@@ -51,8 +51,8 @@ SWEP.AnimShoot			= ACT_HL2MP_GESTURE_RANGE_ATTACK_PISTOL
 
 SWEP.AccuracyMOA		=	0
 SWEP.SightTime			=	0.2
-SWEP.Primary.ClipSize	=	35
-SWEP.ChamberSize		=	1
+SWEP.Primary.ClipSize	=	6
+SWEP.ChamberSize		=	0
 SWEP.MuzzleEffect		=	"muzzleflash_mp5"
 SWEP.NoFlash			=	true--ArcCW.CSX.NoFlash
 
@@ -93,10 +93,10 @@ SWEP.IronSightStruct = {
 	CrosshairInSights = true,
 }
 
-SWEP.Delay = (60/600)
+SWEP.Delay = (60/45)
 SWEP.Firemodes = {
 	{
-		Mode = 2,
+		Mode = 1,
 	},
 	{
 		Mode = 0,

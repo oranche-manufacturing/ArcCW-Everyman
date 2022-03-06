@@ -49,12 +49,12 @@ SWEP.HoldtypeActive		= "pistol"
 SWEP.HoldtypeSights		= "revolver"
 SWEP.AnimShoot			= ACT_HL2MP_GESTURE_RANGE_ATTACK_PISTOL
 
-SWEP.HipDispersion		=	200
-SWEP.MoveDispersion		=	100
+SWEP.HipDispersion		=	300
+SWEP.MoveDispersion		=	300
 SWEP.JumpDispersion		=	1000
 SWEP.AccuracyMOA		=	6
 SWEP.SightTime			=	0.2
-SWEP.Primary.ClipSize	=	10
+SWEP.Primary.ClipSize	=	25
 SWEP.ChamberSize		=	1
 SWEP.MuzzleEffect		=	"muzzleflash_m14"
 SWEP.NoFlash			=	true--ArcCW.CSX.NoFlash
@@ -96,10 +96,10 @@ SWEP.IronSightStruct = {
 	CrosshairInSights = true,
 }
 
-SWEP.Delay = (60/400)
+SWEP.Delay = (60/600)
 SWEP.Firemodes = {
 	{
-		Mode = 1,
+		Mode = 2,
 	},
 	{
 		Mode = 0,

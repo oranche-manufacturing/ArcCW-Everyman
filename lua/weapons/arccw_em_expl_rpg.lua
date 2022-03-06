@@ -1,9 +1,9 @@
 SWEP.Base			=	"arccw_base"
 SWEP.Spawnable		=	true
 
-SWEP.Category		=	"ArcCW - OSIR"
-SWEP.PrintName		=	"Machine gun"
-SWEP.Trivia_Class			= "Machine gun"
+SWEP.Category		=	"ArcCW - Everyman"
+SWEP.PrintName		=	"Explosive, rocket"
+SWEP.Trivia_Class			= "Explosive weapon"
 SWEP.Trivia_Desc			= ""
 SWEP.Trivia_Manufacturer	= nil
 SWEP.Trivia_Calibre			= nil
@@ -16,9 +16,9 @@ SWEP.SlotPos		=	0
 
 SWEP.UseHands		=	false
 SWEP.ViewModelFOV	=	75
-SWEP.ViewModel		=	"models/weapons/w_mach_hk21e.mdl"
-SWEP.WorldModel		=	"models/weapons/w_mach_hk21e.mdl"
-SWEP.ActivePos = Vector(4.5, 15, -11)
+SWEP.ViewModel		=	"models/weapons/w_rif_aks74u.mdl"
+SWEP.WorldModel		=	"models/weapons/w_mp40.mdl"
+SWEP.ActivePos = Vector(4.5, 12, -11)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.HolsterPos = Vector(2.5, 13, -11)
@@ -34,13 +34,13 @@ SWEP.RangeMin			=	10
 SWEP.Range				=	30
 SWEP.Penetration		=	5
 SWEP.Primary.Ammo		=	"pistol"
-SWEP.BodyDamageMults	=	ArcCW.OSIR.BodyDamageMults
+SWEP.BodyDamageMults	=	ArcCW.EM.BodyDamageMults
 
 SWEP.Recoil			=	1.0
 SWEP.RecoilSide		=	0.5
 
-SWEP.ShellModel		=	"models/shells/shell_556.mdl"
-SWEP.ShellScale		=	1
+SWEP.ShellModel		=	"models/shells/shell_9mm.mdl"
+SWEP.ShellScale		=	1.334
 SWEP.ShellPitch		=	100
 SWEP.ShellSounds	=	"autocheck"
 
@@ -49,31 +49,28 @@ SWEP.HoldtypeActive		= "pistol"
 SWEP.HoldtypeSights		= "revolver"
 SWEP.AnimShoot			= ACT_HL2MP_GESTURE_RANGE_ATTACK_PISTOL
 
-SWEP.Bipod_Integral		=	true
-SWEP.BipodDispersion	=	0.1
-SWEP.BipodRecoil		=	0.1
 SWEP.AccuracyMOA		=	0
 SWEP.SightTime			=	0.2
-SWEP.Primary.ClipSize	=	100
+SWEP.Primary.ClipSize	=	35
 SWEP.ChamberSize		=	1
 SWEP.MuzzleEffect		=	"muzzleflash_mp5"
 SWEP.NoFlash			=	true--ArcCW.CSX.NoFlash
 
 SWEP.ShootSound			=	{
-	"osir/pistol/fire-01.ogg",
-	"osir/pistol/fire-02.ogg",
-	"osir/pistol/fire-03.ogg",
-	"osir/pistol/fire-04.ogg",
-	"osir/pistol/fire-05.ogg",
-	"osir/pistol/fire-06.ogg"
+	"em/pistol/fire-01.ogg",
+	"em/pistol/fire-02.ogg",
+	"em/pistol/fire-03.ogg",
+	"em/pistol/fire-04.ogg",
+	"em/pistol/fire-05.ogg",
+	"em/pistol/fire-06.ogg"
 }
 SWEP.DistantShootSound	=	{
-	"osir/pistol-tail-01.ogg",
-	"osir/pistol-tail-02.ogg",
-	"osir/pistol-tail-03.ogg",
-	"osir/pistol-tail-04.ogg",
-	"osir/pistol-tail-05.ogg",
-	"osir/pistol-tail-06.ogg"
+	"em/pistol-tail-01.ogg",
+	"em/pistol-tail-02.ogg",
+	"em/pistol-tail-03.ogg",
+	"em/pistol-tail-04.ogg",
+	"em/pistol-tail-05.ogg",
+	"em/pistol-tail-06.ogg"
 }
 
 SWEP.ShootVol				=	90
@@ -89,14 +86,14 @@ SWEP.AttachmentElements = {}
 SWEP.Animations = {}
 
 SWEP.IronSightStruct = {
-	Pos = Vector(3, 14, -10.5),
+	Pos = Vector(3, 10, -10.5),
 	Ang = Angle(0, 0, 0),
 	ViewModelFOV = 75,
 	Magnification = 0.7,
 	CrosshairInSights = true,
 }
 
-SWEP.Delay = (60/650)
+SWEP.Delay = (60/600)
 SWEP.Firemodes = {
 	{
 		Mode = 2,
@@ -136,15 +133,15 @@ SWEP.Animations = {
 	},
 	["reload"] = {
 		Source = "reload",
-		Time = 3,
-		MinProgress = 2.5,
+		Time = 1,
+		MinProgress = 0.5,
 		SoundTable = {
 		}
 	},
 	["reload_empty"] = {
 		Source = "reload_empty",
-		Time = 3,
-		MinProgress = 2.5,
+		Time = 1,
+		MinProgress = 0.5,
 		SoundTable = {
 		}
 	},

@@ -1,10 +1,10 @@
 SWEP.Base			=	"arccw_base"
 SWEP.Spawnable		=	true
 
-SWEP.Category		=	"ArcCW - OSIR"
-SWEP.PrintName		=	"Marksman, anti-material"
+SWEP.Category		=	"ArcCW - Everyman"
+SWEP.PrintName		=	"Marksman, sniper"
 SWEP.Trivia_Class			= "Marksman rifle"
-SWEP.Trivia_Desc			= "A overwhelmingly large beast of a rifle, firing a single, super high-caliber shot that leaves a distinctive tracer, loud report, and kills anything it hits. (If it doesn't, you're screwed.) Perfect for ambushes or vehicles."
+SWEP.Trivia_Desc			= "A high-precision, custom-tooled sniper rifle meant for incredibly long ranges, mounted with a variable scope. Guaranteed kill on a headshot, as God intended. Be careful of the glint. Slow bolt speed and low magazine size makes this weapon unideal in direct combat."
 SWEP.Trivia_Manufacturer	= nil
 SWEP.Trivia_Calibre			= nil
 SWEP.Trivia_Mechanism		= nil
@@ -16,10 +16,10 @@ SWEP.SlotPos		=	0
 
 SWEP.UseHands		=	false
 SWEP.ViewModelFOV	=	75
-SWEP.ViewModel		=	"models/weapons/w_snip_tgewehr.mdl"
-SWEP.WorldModel		=	"models/weapons/w_snip_tgewehr.mdl"
-SWEP.ActivePos = Vector(4.75, 12, -11.25)
-SWEP.ActiveAng = Angle(3, 3, 0)
+SWEP.ViewModel		=	"models/weapons/w_snip_l42.mdl"
+SWEP.WorldModel		=	"models/weapons/w_snip_l42.mdl"
+SWEP.ActivePos = Vector(4.5, 12, -11)
+SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.HolsterPos = Vector(2.5, 13, -11)
 SWEP.HolsterAng = Angle(-5, 0, 0)
@@ -32,15 +32,15 @@ SWEP.Damage				=	20
 SWEP.DamageMin			=	17
 SWEP.RangeMin			=	10
 SWEP.Range				=	30
-SWEP.Penetration		=	20
+SWEP.Penetration		=	15
 SWEP.Primary.Ammo		=	"pistol"
-SWEP.BodyDamageMults	=	ArcCW.OSIR.BodyDamageMults
+SWEP.BodyDamageMults	=	ArcCW.EM.BodyDamageMults
 
 SWEP.Recoil			=	1.0
 SWEP.RecoilSide		=	0.5
 
 SWEP.ShellModel		=	"models/shells/shell_762nato.mdl"
-SWEP.ShellScale		=	1.334
+SWEP.ShellScale		=	1
 SWEP.ShellPitch		=	100
 SWEP.ShellSounds	=	"autocheck"
 
@@ -51,30 +51,30 @@ SWEP.AnimShoot			= ACT_HL2MP_GESTURE_RANGE_ATTACK_PISTOL
 
 SWEP.AccuracyMOA		=	0
 SWEP.SightTime			=	0.2
-SWEP.Primary.ClipSize	=	1
+SWEP.Primary.ClipSize	=	5
 SWEP.ChamberSize		=	1
-SWEP.MuzzleEffect		=	"muzzleflash_mp5"
+SWEP.MuzzleEffect		=	"muzzleflash_m14"
 SWEP.NoFlash			=	true--ArcCW.CSX.NoFlash
 
 SWEP.ShootSound			=	{
-	"osir/pistol/fire-01.ogg",
-	"osir/pistol/fire-02.ogg",
-	"osir/pistol/fire-03.ogg",
-	"osir/pistol/fire-04.ogg",
-	"osir/pistol/fire-05.ogg",
-	"osir/pistol/fire-06.ogg"
+	"em/pistol/fire-01.ogg",
+	"em/pistol/fire-02.ogg",
+	"em/pistol/fire-03.ogg",
+	"em/pistol/fire-04.ogg",
+	"em/pistol/fire-05.ogg",
+	"em/pistol/fire-06.ogg"
 }
 SWEP.DistantShootSound	=	{
-	"osir/pistol-tail-01.ogg",
-	"osir/pistol-tail-02.ogg",
-	"osir/pistol-tail-03.ogg",
-	"osir/pistol-tail-04.ogg",
-	"osir/pistol-tail-05.ogg",
-	"osir/pistol-tail-06.ogg"
+	"em/pistol-tail-01.ogg",
+	"em/pistol-tail-02.ogg",
+	"em/pistol-tail-03.ogg",
+	"em/pistol-tail-04.ogg",
+	"em/pistol-tail-05.ogg",
+	"em/pistol-tail-06.ogg"
 }
 
 SWEP.ShootVol				=	90
-SWEP.ShootPitch				=	70
+SWEP.ShootPitch				=	100
 SWEP.ShootPitchVariation	=	0--.05
 
 SWEP.MuzzleEffectAttachment	=	1
@@ -93,11 +93,11 @@ SWEP.IronSightStruct = {
 	CrosshairInSights = true,
 }
 
-SWEP.Delay = (60/100)
+SWEP.Delay = (60/45)
 SWEP.Firemodes = {
 	{
 		Mode = 1,
-		PrintName = "Single-shot"
+		PrintName = "Bolt-action"
 	},
 	{
 		Mode = 0,
@@ -134,15 +134,15 @@ SWEP.Animations = {
 	},
 	["reload"] = {
 		Source = "reload",
-		Time = 3,
-		MinProgress = 2.5,
+		Time = 1,
+		MinProgress = 0.5,
 		SoundTable = {
 		}
 	},
 	["reload_empty"] = {
 		Source = "reload_empty",
-		Time = 3,
-		MinProgress = 2.5,
+		Time = 1,
+		MinProgress = 0.5,
 		SoundTable = {
 		}
 	},

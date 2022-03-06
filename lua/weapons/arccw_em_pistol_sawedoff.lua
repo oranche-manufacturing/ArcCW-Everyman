@@ -1,10 +1,10 @@
 SWEP.Base			=	"arccw_base"
 SWEP.Spawnable		=	true
 
-SWEP.Category		=	"ArcCW - OSIR"
-SWEP.PrintName		=	"Pistol, silenced"
+SWEP.Category		=	"ArcCW - Everyman"
+SWEP.PrintName		=	"Pistol, sawn-off"
 SWEP.Trivia_Class			= "Pistol"
-SWEP.Trivia_Desc			= "A highly-customized semi-automatic pistol...\n\nwith a polished feeding ramp, reinforced slide, tightened interlock frame, custom iron sights, extended thumb safety, long-type trigger with non-slip grooves, ring hammer, and filed down trigger guard. Everything about this gun is is expertly crafted and customized. Unfortunately, despite its price, it doesn't fare well in direct combat due to its low fire rate and magazine size.\nUnique ammunition expands in the head, causing more severe damage when a successful, close-range headshot is performed."
+SWEP.Trivia_Desc			= "A sawn-down double-barrel shotgun. Not very useful beyond a few meters, but the sheer force of point-blank twin twelve-gauge compensates for its lack of range and subtlety."
 SWEP.Trivia_Manufacturer	= nil
 SWEP.Trivia_Calibre			= nil
 SWEP.Trivia_Mechanism		= nil
@@ -16,16 +16,16 @@ SWEP.SlotPos		=	0
 
 SWEP.UseHands		=	false
 SWEP.ViewModelFOV	=	75
-SWEP.ViewModel		=	"models/weapons/w_pist_m1911_silencer.mdl"
-SWEP.WorldModel		=	"models/weapons/w_pist_usp.mdl"
-SWEP.ActivePos = Vector(4.5, 20, -8.5)
-SWEP.ActiveAng = Angle(0, 0, 0)
+SWEP.ViewModel		=	"models/weapons/w_shot_sxs_shorty.mdl"
+SWEP.WorldModel		=	"models/weapons/w_shot_shorty.mdl"
+SWEP.ActivePos = Vector(-4, -6, 0)
+SWEP.ActiveAng = Angle(10, 183, 0)
 
-SWEP.HolsterPos = Vector(2.5, 20, -8)
-SWEP.HolsterAng = Angle(-5, 0, 0)
+SWEP.HolsterPos = Vector(2.5, 12, -8)
+SWEP.HolsterAng = Angle(-5, 180, 0)
 
-SWEP.ReloadPos = Vector(4.5, 20, -8)
-SWEP.ReloadAng = Angle(-25, 0, 0)
+SWEP.ReloadPos = Vector(-3, -4, -3)
+SWEP.ReloadAng = Angle(40, 180, 0)
 SWEP.DefaultBodygroups = "00000000"
 
 SWEP.Damage				=	32
@@ -34,7 +34,7 @@ SWEP.RangeMin			=	10
 SWEP.Range				=	30
 SWEP.Penetration		=	4
 SWEP.Primary.Ammo		=	"pistol"
-SWEP.BodyDamageMults	=	ArcCW.OSIR.BodyDamageMults
+SWEP.BodyDamageMults	=	ArcCW.EM.BodyDamageMults
 
 SWEP.Recoil			=	1.0
 SWEP.RecoilSide		=	0.5
@@ -49,31 +49,32 @@ SWEP.HoldtypeActive		= "pistol"
 SWEP.HoldtypeSights		= "revolver"
 SWEP.AnimShoot			= ACT_HL2MP_GESTURE_RANGE_ATTACK_PISTOL
 
+SWEP.Num				=	8
 SWEP.HipDispersion		=	200
 SWEP.MoveDispersion		=	100
 SWEP.JumpDispersion		=	1000
-SWEP.AccuracyMOA		=	2
+SWEP.AccuracyMOA		=	80
 SWEP.SightTime			=	0.2
-SWEP.Primary.ClipSize	=	8
+SWEP.Primary.ClipSize	=	2
 SWEP.ChamberSize		=	1
-SWEP.MuzzleEffect		=	"muzzleflash_suppressed"
+SWEP.MuzzleEffect		=	"muzzleflash_shotgun"
 SWEP.NoFlash			=	true--ArcCW.CSX.NoFlash
 
 SWEP.ShootSound			=	{
-	"osir/pistol/fire-01.ogg",
-	"osir/pistol/fire-02.ogg",
-	"osir/pistol/fire-03.ogg",
-	"osir/pistol/fire-04.ogg",
-	"osir/pistol/fire-05.ogg",
-	"osir/pistol/fire-06.ogg"
+	"em/pistol/fire-01.ogg",
+	"em/pistol/fire-02.ogg",
+	"em/pistol/fire-03.ogg",
+	"em/pistol/fire-04.ogg",
+	"em/pistol/fire-05.ogg",
+	"em/pistol/fire-06.ogg"
 }
 SWEP.DistantShootSound	=	{
-	"osir/pistol-tail-01.ogg",
-	"osir/pistol-tail-02.ogg",
-	"osir/pistol-tail-03.ogg",
-	"osir/pistol-tail-04.ogg",
-	"osir/pistol-tail-05.ogg",
-	"osir/pistol-tail-06.ogg"
+	"em/pistol-tail-01.ogg",
+	"em/pistol-tail-02.ogg",
+	"em/pistol-tail-03.ogg",
+	"em/pistol-tail-04.ogg",
+	"em/pistol-tail-05.ogg",
+	"em/pistol-tail-06.ogg"
 }
 
 SWEP.ShootVol				=	90
@@ -89,14 +90,14 @@ SWEP.AttachmentElements = {}
 SWEP.Animations = {}
 
 SWEP.IronSightStruct = {
-	Pos = Vector(2.75, 16, -8),
+	Pos = Vector(2, 8, -7),
 	Ang = Angle(0, 0, 0),
 	ViewModelFOV = 75,
 	Magnification = 0.7,
 	CrosshairInSights = true,
 }
 
-SWEP.Delay = (60/400)
+SWEP.Delay = (60/1200)
 SWEP.Firemodes = {
 	{
 		Mode = 1,
@@ -136,15 +137,15 @@ SWEP.Animations = {
 	},
 	["reload"] = {
 		Source = "reload",
-		Time = 1,
-		MinProgress = 0.5,
+		Time = 1.5,
+		MinProgress = 0.75,
 		SoundTable = {
 		}
 	},
 	["reload_empty"] = {
 		Source = "reload_empty",
-		Time = 1,
-		MinProgress = 0.5,
+		Time = 1.5,
+		MinProgress = 0.75,
 		SoundTable = {
 		}
 	},

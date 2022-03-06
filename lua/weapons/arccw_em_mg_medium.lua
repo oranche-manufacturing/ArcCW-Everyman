@@ -1,10 +1,10 @@
 SWEP.Base			=	"arccw_base"
 SWEP.Spawnable		=	true
 
-SWEP.Category		=	"ArcCW - OSIR"
-SWEP.PrintName		=	"Marksman, bolt-action"
-SWEP.Trivia_Class			= "Marksman rifle"
-SWEP.Trivia_Desc			= "An old bolt-action rifle, still in service. A well oiled bolt makes putting more rounds down easier than other bolt-actions, though isn't quite as longer range or high-impact. If it's good for the trenches, it's good for you."
+SWEP.Category		=	"ArcCW - Everyman"
+SWEP.PrintName		=	"Machine gun, medium"
+SWEP.Trivia_Class			= "Machine gun"
+SWEP.Trivia_Desc			= ""
 SWEP.Trivia_Manufacturer	= nil
 SWEP.Trivia_Calibre			= nil
 SWEP.Trivia_Mechanism		= nil
@@ -16,9 +16,9 @@ SWEP.SlotPos		=	0
 
 SWEP.UseHands		=	false
 SWEP.ViewModelFOV	=	75
-SWEP.ViewModel		=	"models/weapons/w_rif_1903.mdl"
-SWEP.WorldModel		=	"models/weapons/w_rif_1903.mdl"
-SWEP.ActivePos = Vector(4.5, 12, -11)
+SWEP.ViewModel		=	"models/weapons/w_mach_m240.mdl"
+SWEP.WorldModel		=	"models/weapons/w_mach_m240.mdl"
+SWEP.ActivePos = Vector(4.5, 14, -12)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.HolsterPos = Vector(2.5, 13, -11)
@@ -34,10 +34,10 @@ SWEP.RangeMin			=	10
 SWEP.Range				=	30
 SWEP.Penetration		=	10
 SWEP.Primary.Ammo		=	"pistol"
-SWEP.BodyDamageMults	=	ArcCW.OSIR.BodyDamageMults
+SWEP.BodyDamageMults	=	ArcCW.EM.BodyDamageMults
 
-SWEP.Recoil			=	1.0
-SWEP.RecoilSide		=	0.5
+SWEP.Recoil			=	2.0
+SWEP.RecoilSide		=	1.0
 
 SWEP.ShellModel		=	"models/shells/shell_762nato.mdl"
 SWEP.ShellScale		=	1
@@ -49,32 +49,35 @@ SWEP.HoldtypeActive		= "pistol"
 SWEP.HoldtypeSights		= "revolver"
 SWEP.AnimShoot			= ACT_HL2MP_GESTURE_RANGE_ATTACK_PISTOL
 
+SWEP.Bipod_Integral		=	true
+SWEP.BipodDispersion	=	0.1
+SWEP.BipodRecoil		=	0.1
 SWEP.AccuracyMOA		=	0
 SWEP.SightTime			=	0.2
-SWEP.Primary.ClipSize	=	10
+SWEP.Primary.ClipSize	=	70
 SWEP.ChamberSize		=	1
 SWEP.MuzzleEffect		=	"muzzleflash_mp5"
 SWEP.NoFlash			=	true--ArcCW.CSX.NoFlash
 
 SWEP.ShootSound			=	{
-	"osir/pistol/fire-01.ogg",
-	"osir/pistol/fire-02.ogg",
-	"osir/pistol/fire-03.ogg",
-	"osir/pistol/fire-04.ogg",
-	"osir/pistol/fire-05.ogg",
-	"osir/pistol/fire-06.ogg"
+	"em/pistol/fire-01.ogg",
+	"em/pistol/fire-02.ogg",
+	"em/pistol/fire-03.ogg",
+	"em/pistol/fire-04.ogg",
+	"em/pistol/fire-05.ogg",
+	"em/pistol/fire-06.ogg"
 }
 SWEP.DistantShootSound	=	{
-	"osir/pistol-tail-01.ogg",
-	"osir/pistol-tail-02.ogg",
-	"osir/pistol-tail-03.ogg",
-	"osir/pistol-tail-04.ogg",
-	"osir/pistol-tail-05.ogg",
-	"osir/pistol-tail-06.ogg"
+	"em/pistol-tail-01.ogg",
+	"em/pistol-tail-02.ogg",
+	"em/pistol-tail-03.ogg",
+	"em/pistol-tail-04.ogg",
+	"em/pistol-tail-05.ogg",
+	"em/pistol-tail-06.ogg"
 }
 
 SWEP.ShootVol				=	90
-SWEP.ShootPitch				=	100
+SWEP.ShootPitch				=	80
 SWEP.ShootPitchVariation	=	0--.05
 
 SWEP.MuzzleEffectAttachment	=	1
@@ -86,18 +89,17 @@ SWEP.AttachmentElements = {}
 SWEP.Animations = {}
 
 SWEP.IronSightStruct = {
-	Pos = Vector(3, 10, -9),
+	Pos = Vector(3, 12, -12),
 	Ang = Angle(0, 0, 0),
 	ViewModelFOV = 75,
 	Magnification = 0.7,
 	CrosshairInSights = true,
 }
 
-SWEP.Delay = (60/60)
+SWEP.Delay = (60/500)
 SWEP.Firemodes = {
 	{
-		Mode = 1,
-		PrintName = "Bolt-action"
+		Mode = 2,
 	},
 	{
 		Mode = 0,
@@ -134,15 +136,15 @@ SWEP.Animations = {
 	},
 	["reload"] = {
 		Source = "reload",
-		Time = 1,
-		MinProgress = 0.5,
+		Time = 3,
+		MinProgress = 2.5,
 		SoundTable = {
 		}
 	},
 	["reload_empty"] = {
 		Source = "reload_empty",
-		Time = 1,
-		MinProgress = 0.5,
+		Time = 3,
+		MinProgress = 2.5,
 		SoundTable = {
 		}
 	},

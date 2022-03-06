@@ -1,9 +1,9 @@
 SWEP.Base			=	"arccw_base"
 SWEP.Spawnable		=	true
 
-SWEP.Category		=	"ArcCW - OSIR"
-SWEP.PrintName		=	"Explosive, grenade"
-SWEP.Trivia_Class			= "Explosive weapon"
+SWEP.Category		=	"ArcCW - Everyman"
+SWEP.PrintName		=	"Shotgun, semi-auto"
+SWEP.Trivia_Class			= "Shotgun"
 SWEP.Trivia_Desc			= ""
 SWEP.Trivia_Manufacturer	= nil
 SWEP.Trivia_Calibre			= nil
@@ -16,7 +16,7 @@ SWEP.SlotPos		=	0
 
 SWEP.UseHands		=	false
 SWEP.ViewModelFOV	=	75
-SWEP.ViewModel		=	"models/weapons/w_rif_aks74u.mdl"
+SWEP.ViewModel		=	"models/weapons/w_shot_xm1014.mdl"
 SWEP.WorldModel		=	"models/weapons/w_mp40.mdl"
 SWEP.ActivePos = Vector(4.5, 12, -11)
 SWEP.ActiveAng = Angle(0, 0, 0)
@@ -34,7 +34,7 @@ SWEP.RangeMin			=	10
 SWEP.Range				=	30
 SWEP.Penetration		=	5
 SWEP.Primary.Ammo		=	"pistol"
-SWEP.BodyDamageMults	=	ArcCW.OSIR.BodyDamageMults
+SWEP.BodyDamageMults	=	ArcCW.EM.BodyDamageMults
 
 SWEP.Recoil			=	1.0
 SWEP.RecoilSide		=	0.5
@@ -57,20 +57,20 @@ SWEP.MuzzleEffect		=	"muzzleflash_mp5"
 SWEP.NoFlash			=	true--ArcCW.CSX.NoFlash
 
 SWEP.ShootSound			=	{
-	"osir/pistol/fire-01.ogg",
-	"osir/pistol/fire-02.ogg",
-	"osir/pistol/fire-03.ogg",
-	"osir/pistol/fire-04.ogg",
-	"osir/pistol/fire-05.ogg",
-	"osir/pistol/fire-06.ogg"
+	"em/pistol/fire-01.ogg",
+	"em/pistol/fire-02.ogg",
+	"em/pistol/fire-03.ogg",
+	"em/pistol/fire-04.ogg",
+	"em/pistol/fire-05.ogg",
+	"em/pistol/fire-06.ogg"
 }
 SWEP.DistantShootSound	=	{
-	"osir/pistol-tail-01.ogg",
-	"osir/pistol-tail-02.ogg",
-	"osir/pistol-tail-03.ogg",
-	"osir/pistol-tail-04.ogg",
-	"osir/pistol-tail-05.ogg",
-	"osir/pistol-tail-06.ogg"
+	"em/pistol-tail-01.ogg",
+	"em/pistol-tail-02.ogg",
+	"em/pistol-tail-03.ogg",
+	"em/pistol-tail-04.ogg",
+	"em/pistol-tail-05.ogg",
+	"em/pistol-tail-06.ogg"
 }
 
 SWEP.ShootVol				=	90

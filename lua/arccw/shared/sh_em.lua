@@ -1,7 +1,7 @@
 
-ArcCW.OSIR = {}
+ArcCW.EM = {}
 
-ArcCW.OSIR.BodyDamageMults = {
+ArcCW.EM.BodyDamageMults = {
     [HITGROUP_HEAD] = 2,
 
     [HITGROUP_CHEST] = 1,
@@ -14,7 +14,7 @@ ArcCW.OSIR.BodyDamageMults = {
     [HITGROUP_RIGHTLEG] = 0.75,
 }
 
-ArcCW.OSIR.BodyDamageMults_Stealth = {
+ArcCW.EM.BodyDamageMults_Stealth = {
     [HITGROUP_HEAD] = 3,
 
     [HITGROUP_CHEST] = 1,

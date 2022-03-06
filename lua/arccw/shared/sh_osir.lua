@@ -1,0 +1,28 @@
+
+ArcCW.OSIR = {}
+
+ArcCW.OSIR.BodyDamageMults = {
+    [HITGROUP_HEAD] = 2,
+
+    [HITGROUP_CHEST] = 1,
+    [HITGROUP_STOMACH] = 1,
+
+    [HITGROUP_LEFTARM] = 1,
+    [HITGROUP_RIGHTARM] = 1,
+
+    [HITGROUP_LEFTLEG] = 0.75,
+    [HITGROUP_RIGHTLEG] = 0.75,
+}
+
+ArcCW.OSIR.BodyDamageMults_Stealth = {
+    [HITGROUP_HEAD] = 3,
+
+    [HITGROUP_CHEST] = 1,
+    [HITGROUP_STOMACH] = 1,
+
+    [HITGROUP_LEFTARM] = 1,
+    [HITGROUP_RIGHTARM] = 1,
+
+    [HITGROUP_LEFTLEG] = 1,
+    [HITGROUP_RIGHTLEG] = 1,
+}

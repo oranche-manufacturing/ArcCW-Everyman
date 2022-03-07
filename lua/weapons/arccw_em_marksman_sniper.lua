@@ -52,7 +52,7 @@ SWEP.AnimShoot			= ACT_HL2MP_GESTURE_RANGE_ATTACK_PISTOL
 SWEP.AccuracyMOA		=	0
 SWEP.SightTime			=	0.2
 SWEP.Primary.ClipSize	=	5
-SWEP.ChamberSize		=	1
+SWEP.ChamberSize		=	0
 SWEP.MuzzleEffect		=	"muzzleflash_m14"
 SWEP.NoFlash			=	true--ArcCW.CSX.NoFlash
 
@@ -140,6 +140,13 @@ SWEP.Animations = {
 		Source = "fire_empty",
 	},
 	["sgreload_start"] = {
+		Source = "reload",
+		Time = 0.25,
+		SoundTable = {
+			{ s = "weapons/357/357_reload1.wav", t = 0.0 },
+		}
+	},
+	["sgreload_start_empty"] = {
 		Source = "reload",
 		Time = 0.25,
 		ShellEjectAt = 0,

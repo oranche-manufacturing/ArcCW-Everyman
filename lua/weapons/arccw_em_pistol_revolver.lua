@@ -21,8 +21,8 @@ SWEP.WorldModel		=	"models/weapons/w_pist_saa.mdl"
 SWEP.ActivePos = Vector(-4.5, -11, -2)
 SWEP.ActiveAng = Angle(0, 180, 0)
 
-SWEP.HolsterPos = Vector(2.5, 12, -8)
-SWEP.HolsterAng = Angle(-5, 0, 0)
+SWEP.HolsterPos = Vector(-2.5, -12, -2)
+SWEP.HolsterAng = Angle(15, 180, -15)
 
 SWEP.ReloadPos = Vector(13.5, -11, -7)
 SWEP.ReloadAng = Angle(-25, 180, -75)

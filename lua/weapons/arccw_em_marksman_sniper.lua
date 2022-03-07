@@ -33,7 +33,7 @@ SWEP.DamageMin			=	17
 SWEP.RangeMin			=	10
 SWEP.Range				=	30
 SWEP.Penetration		=	15
-SWEP.Primary.Ammo		=	"pistol"
+SWEP.Primary.Ammo		=	"ar2"
 SWEP.BodyDamageMults	=	ArcCW.EM.BodyDamageMults
 
 SWEP.Recoil			=	1.0
@@ -136,8 +136,8 @@ SWEP.Animations = {
 			{ s = "weapons/357/357_reload1.wav", t = 0.75 },
 		}
 	},
-	["fire_last"] = {
-		Source = "fire_last",
+	["fire_empty"] = {
+		Source = "fire_empty",
 	},
 	["sgreload_start"] = {
 		Source = "reload",

@@ -33,7 +33,7 @@ SWEP.DamageMin			=	14
 SWEP.RangeMin			=	10
 SWEP.Range				=	50
 SWEP.Penetration		=	5
-SWEP.Primary.Ammo		=	"pistol"
+SWEP.Primary.Ammo		=	"buckshot"
 SWEP.BodyDamageMults	=	ArcCW.EM.BodyDamageMults
 
 SWEP.Recoil			=	1.0

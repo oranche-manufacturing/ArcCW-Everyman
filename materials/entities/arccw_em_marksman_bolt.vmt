@@ -1,4 +1,4 @@
-"LightmappedGeneric"
+"UnlitGeneric"
 {
 	"$basetexture" "entities/arccw_em_marksman_bolt"
 	"$translucent" 1

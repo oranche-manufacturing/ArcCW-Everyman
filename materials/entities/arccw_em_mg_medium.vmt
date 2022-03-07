@@ -1,4 +1,4 @@
-"LightmappedGeneric"
+"UnlitGeneric"
 {
 	"$basetexture" "entities/arccw_em_mg_medium"
 	"$translucent" 1

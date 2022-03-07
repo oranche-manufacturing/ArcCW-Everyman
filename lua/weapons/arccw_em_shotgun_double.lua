@@ -21,11 +21,11 @@ SWEP.WorldModel		=	"models/weapons/w_shot_sxs.mdl"
 SWEP.ActivePos = Vector(-3, -4, -2)
 SWEP.ActiveAng = Angle(0, 180, 0)
 
-SWEP.HolsterPos = Vector(-2.5, 12, -8)
-SWEP.HolsterAng = Angle(-5, 180, 0)
+SWEP.HolsterPos = Vector(-2.5, -5, 0)
+SWEP.HolsterAng = Angle(25, 183, -3)
 
 SWEP.ReloadPos = Vector(-3, -4, -3)
-SWEP.ReloadAng = Angle(40, 180, 0)
+SWEP.ReloadAng = Angle(40, 183, -3)
 SWEP.DefaultBodygroups = "00000000"
 
 SWEP.Damage				=	22

@@ -19,13 +19,13 @@ SWEP.ViewModelFOV	=	75
 SWEP.ViewModel		=	"models/weapons/w_shot_sxs_shorty.mdl"
 SWEP.WorldModel		=	"models/weapons/w_shot_sxs_shorty.mdl"
 SWEP.ActivePos = Vector(-4, -6, 0)
-SWEP.ActiveAng = Angle(10, 183, 0)
+SWEP.ActiveAng = Angle(10, 183, -3)
 
-SWEP.HolsterPos = Vector(-2.5, 12, -8)
-SWEP.HolsterAng = Angle(-5, 180, 0)
+SWEP.HolsterPos = Vector(-2.5, -5, 0)
+SWEP.HolsterAng = Angle(25, 183, -3)
 
 SWEP.ReloadPos = Vector(-3, -4, -3)
-SWEP.ReloadAng = Angle(40, 180, 0)
+SWEP.ReloadAng = Angle(40, 183, -3)
 SWEP.DefaultBodygroups = "00000000"
 
 SWEP.Damage				=	32
@@ -90,8 +90,8 @@ SWEP.AttachmentElements = {}
 SWEP.Animations = {}
 
 SWEP.IronSightStruct = {
-	Pos = Vector(2, 8, -7),
-	Ang = Angle(0, 0, 0),
+	Pos = Vector(-2, -3, -2),
+	Ang = Angle(10, 183, -3),
 	ViewModelFOV = 75,
 	Magnification = 0.7,
 	CrosshairInSights = true,

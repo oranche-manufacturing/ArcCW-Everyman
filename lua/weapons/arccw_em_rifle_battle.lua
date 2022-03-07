@@ -28,7 +28,7 @@ SWEP.ReloadPos = Vector(4.5, 12, -11)
 SWEP.ReloadAng = Angle(-25, 0, 0)
 SWEP.DefaultBodygroups = "00000000"
 
-SWEP.Damage				=	35
+SWEP.Damage				=	41
 SWEP.DamageMin			=	26
 SWEP.RangeMin			=	15
 SWEP.Range				=	50

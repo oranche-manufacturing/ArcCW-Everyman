@@ -59,7 +59,7 @@ SWEP.AccuracyMOA		=	1
 SWEP.SightTime			=	0.2
 SWEP.Primary.ClipSize	=	70
 SWEP.ChamberSize		=	1
-SWEP.MuzzleEffect		=	"muzzleflash_mp5"
+SWEP.MuzzleEffect		=	"muzzleflash_minimi"
 SWEP.NoFlash			=	true--ArcCW.CSX.NoFlash
 
 SWEP.ShootSound			=	{

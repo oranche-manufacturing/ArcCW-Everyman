@@ -65,12 +65,12 @@ SWEP.ShootSound			=	{
 	"em/pistol_silenced/fire-06.ogg"
 }
 SWEP.DistantShootSound	=	{
-	"em/pistol_silenced-tail-01.ogg",
-	"em/pistol_silenced-tail-02.ogg",
-	"em/pistol_silenced-tail-03.ogg",
-	"em/pistol_silenced-tail-04.ogg",
-	"em/pistol_silenced-tail-05.ogg",
-	"em/pistol_silenced-tail-06.ogg"
+	"em/silenced-tail-01.ogg",
+	"em/silenced-tail-02.ogg",
+	"em/silenced-tail-03.ogg",
+	"em/silenced-tail-04.ogg",
+	"em/silenced-tail-05.ogg",
+	"em/silenced-tail-06.ogg"
 }
 
 SWEP.ShootVol				=	90

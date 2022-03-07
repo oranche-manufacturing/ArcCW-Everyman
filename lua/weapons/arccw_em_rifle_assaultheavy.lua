@@ -28,10 +28,10 @@ SWEP.ReloadPos = Vector(4.5, 12, -12)
 SWEP.ReloadAng = Angle(-15, 0, 15)
 SWEP.DefaultBodygroups = "00000000"
 
-SWEP.Damage				=	20
-SWEP.DamageMin			=	17
-SWEP.RangeMin			=	10
-SWEP.Range				=	30
+SWEP.Damage				=	37
+SWEP.DamageMin			=	24
+SWEP.RangeMin			=	20
+SWEP.Range				=	50
 SWEP.Penetration		=	10
 SWEP.Primary.Ammo		=	"smg1"
 SWEP.BodyDamageMults	=	ArcCW.EM.BodyDamageMults
@@ -54,9 +54,9 @@ SWEP.MoveDispersion		=	300
 SWEP.JumpDispersion		=	1000
 SWEP.AccuracyMOA		=	1
 SWEP.SightTime			=	0.2
-SWEP.Primary.ClipSize	=	30
+SWEP.Primary.ClipSize	=	25
 SWEP.ChamberSize		=	1
-SWEP.MuzzleEffect		=	"muzzleflash_mp5"
+SWEP.MuzzleEffect		=	"muzzleflash_m14"
 SWEP.NoFlash			=	true--ArcCW.CSX.NoFlash
 
 SWEP.ShootSound			=	{
@@ -96,7 +96,7 @@ SWEP.IronSightStruct = {
 	CrosshairInSights = true,
 }
 
-SWEP.Delay = (60/600)
+SWEP.Delay = (60/500)
 SWEP.Firemodes = {
 	{
 		Mode = 2,

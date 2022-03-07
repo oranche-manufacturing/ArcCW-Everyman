@@ -11,7 +11,7 @@ SWEP.Trivia_Mechanism		= nil
 SWEP.Trivia_Country			= nil
 SWEP.Trivia_Year			= nil
 
-SWEP.Slot			=	1
+SWEP.Slot			=	4
 SWEP.SlotPos		=	0
 
 SWEP.UseHands		=	false

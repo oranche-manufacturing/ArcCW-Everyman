@@ -1,0 +1,5 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "entities/arccw_em_shotgun_semi"
+	"$translucent" 1
+}

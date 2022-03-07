@@ -16,12 +16,12 @@ SWEP.SlotPos		=	0
 
 SWEP.UseHands		=	false
 SWEP.ViewModelFOV	=	75
-SWEP.ViewModel		=	"models/weapons/w_smg_zbr08.mdl"
-SWEP.WorldModel		=	"models/weapons/w_smg_zbr08.mdl"
-SWEP.ActivePos = Vector(4.5, 11, -9)
+SWEP.ViewModel		=	"models/weapons/w_smg_miniuzi.mdl"
+SWEP.WorldModel		=	"models/weapons/w_smg_miniuzi.mdl"
+SWEP.ActivePos = Vector(4.5, 11, -6)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.HolsterPos = Vector(2.5, 12, -8)
+SWEP.HolsterPos = Vector(2.5, 12, -6)
 SWEP.HolsterAng = Angle(-5, 0, 0)
 
 SWEP.ReloadPos = Vector(4.5, 11, -8)

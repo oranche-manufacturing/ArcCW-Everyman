@@ -28,7 +28,7 @@ SWEP.ReloadPos = Vector(4.5, 12, -11)
 SWEP.ReloadAng = Angle(-25, 0, 0)
 SWEP.DefaultBodygroups = "00000000"
 
-SWEP.Damage				=	27
+SWEP.Damage				=	28
 SWEP.DamageMin			=	15
 SWEP.RangeMin			=	9
 SWEP.Range				=	28
@@ -133,16 +133,24 @@ SWEP.Animations = {
 	},
 	["reload"] = {
 		Source = "reload",
-		Time = 1,
-		MinProgress = 0.5,
+		Time = 1.7,
+		MinProgress = 0.75,
 		SoundTable = {
+			{ s = "weapons/awp/awp_bolt.wav", t = 0.1 },
+			{ s = "weapons/mac10/mac10_clipout.wav", t = 0.5 },
+			{ s = "weapons/mac10/mac10_clipin.wav", t = 1 },
+			{ s = "weapons/awp/awp_bolt.wav", t = 1.7 },
 		}
 	},
 	["reload_empty"] = {
 		Source = "reload_empty",
-		Time = 1,
-		MinProgress = 0.5,
+		Time = 2.2,
+		MinProgress = 1.7,
 		SoundTable = {
+			{ s = "weapons/awp/awp_bolt.wav", t = 0.1 },
+			{ s = "weapons/mac10/mac10_clipout.wav", t = 0.5 },
+			{ s = "weapons/mac10/mac10_clipin.wav", t = 1 },
+			{ s = "weapons/scout/scout_bolt.wav", t = 1.7 },
 		}
 	},
 }

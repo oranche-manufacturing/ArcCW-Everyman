@@ -130,20 +130,33 @@ SWEP.Animations = {
 	},
 	["fire"] = {
 		Source = "fire",
-		ShellEjectAt = 0,
+		Time = 1,
+		ShellEjectAt = 0.5,
+		SoundTable = {
+			{ s = "weapons/357/357_reload1.wav", t = 0.5 },
+		}
+	},
+	["fire_last"] = {
+		Source = "fire_last",
 	},
 	["reload"] = {
 		Source = "reload",
-		Time = 1,
-		MinProgress = 0.5,
+		Time = 1.5,
+		MinProgress = 0.75,
 		SoundTable = {
+			{ s = "weapons/357/357_reload4.wav", t = 0.25 },
+			{ s = "weapons/357/357_reload3.wav", t = 0.75 },
 		}
 	},
 	["reload_empty"] = {
 		Source = "reload_empty",
-		Time = 1,
-		MinProgress = 0.5,
+		Time = 1.5,
+		MinProgress = 0.75,
+		ShellEjectAt = 0.5,
 		SoundTable = {
+			{ s = "weapons/357/357_reload1.wav", t = 0.25 },
+			{ s = "weapons/357/357_reload3.wav", t = 0.75 },
+			{ s = "weapons/357/357_spin1.wav", t = 1.5 },
 		}
 	},
 }

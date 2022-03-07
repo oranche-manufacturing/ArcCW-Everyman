@@ -137,13 +137,10 @@ SWEP.Animations = {
 		Time = 3,
 		MinProgress = 2.5,
 		SoundTable = {
-		}
-	},
-	["reload_empty"] = {
-		Source = "reload_empty",
-		Time = 3,
-		MinProgress = 2.5,
-		SoundTable = {
+			{ s = "weapons/smg1/switch_burst.wav", t = 0.25, p = 70 },
+			{ s = "weapons/shotgun/shotgun_reload3.wav", t = 0.5, p = 40 },
+			{ s = "weapons/shotgun/shotgun_reload3.wav", t = 0.75, p = 25 },
+			{ s = "weapons/shotgun/shotgun_cock.wav", t = 2.5, p = 70 },
 		}
 	},
 }

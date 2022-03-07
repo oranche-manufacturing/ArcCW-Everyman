@@ -96,10 +96,11 @@ SWEP.IronSightStruct = {
 	CrosshairInSights = true,
 }
 
-SWEP.Delay = (60/200)
+SWEP.Delay = (60/120)
 SWEP.Firemodes = {
 	{
 		Mode = 1,
+		PrintName = "Single-action",
 	},
 	{
 		Mode = 0,
@@ -132,6 +133,10 @@ SWEP.Animations = {
 	},
 	["fire"] = {
 		Source = "fire",
+		Time = 0.5,
+		SoundTable = {
+			{ s = "weapons/357/357_reload1.wav", t = 0.3 },
+		}
 	},
 	["sgreload_start"] = {
 		Source = "reload",

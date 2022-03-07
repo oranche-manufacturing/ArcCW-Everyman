@@ -136,16 +136,21 @@ SWEP.Animations = {
 	},
 	["reload"] = {
 		Source = "reload",
-		Time = 1,
-		MinProgress = 0.5,
+		Time = 1.5,
+		MinProgress = 0.75,
 		SoundTable = {
+			{ s = "weapons/sg552/sg552_clipout.wav", t = 0.25 },
+			{ s = "weapons/tmp/tmp_clipin.wav", t = 1 },
 		}
 	},
 	["reload_empty"] = {
 		Source = "reload_empty",
-		Time = 1,
-		MinProgress = 0.5,
+		Time = 2,
+		MinProgress = 1.5,
 		SoundTable = {
+			{ s = "weapons/sg552/sg552_clipout.wav", t = 0.25 },
+			{ s = "weapons/tmp/tmp_clipin.wav", t = 1 },
+			{ s = "weapons/p90/p90_boltpull.wav", t = 1.5 },
 		}
 	},
 }

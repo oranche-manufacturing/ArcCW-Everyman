@@ -21,17 +21,17 @@ SWEP.WorldModel		=	"models/weapons/w_shot_sxs.mdl"
 SWEP.ActivePos = Vector(-3, -4, -2)
 SWEP.ActiveAng = Angle(0, 180, 0)
 
-SWEP.HolsterPos = Vector(2.5, 12, -8)
+SWEP.HolsterPos = Vector(-2.5, 12, -8)
 SWEP.HolsterAng = Angle(-5, 180, 0)
 
 SWEP.ReloadPos = Vector(-3, -4, -3)
 SWEP.ReloadAng = Angle(40, 180, 0)
 SWEP.DefaultBodygroups = "00000000"
 
-SWEP.Damage				=	20
-SWEP.DamageMin			=	17
+SWEP.Damage				=	22
+SWEP.DamageMin			=	14
 SWEP.RangeMin			=	10
-SWEP.Range				=	30
+SWEP.Range				=	50
 SWEP.Penetration		=	5
 SWEP.Primary.Ammo		=	"pistol"
 SWEP.BodyDamageMults	=	ArcCW.EM.BodyDamageMults
@@ -101,6 +101,7 @@ SWEP.Delay = (60/1200)
 SWEP.Firemodes = {
 	{
 		Mode = 1,
+		PrintName = "Break-action"
 	},
 	{
 		Mode = 0,
@@ -155,6 +156,8 @@ SWEP.Animations = {
 		Source = "reload",
 		Time = 0.2,
 		SoundTable = {
+			{ s = "weapons/357/357_reload1.wav", t = 0.0 },
+			{ s = "weapons/357/357_reload4.wav", t = 0.2 },
 		}
 	},
 }

@@ -28,8 +28,8 @@ SWEP.ReloadPos = Vector(4.5, 12, -11)
 SWEP.ReloadAng = Angle(-25, 0, 0)
 SWEP.DefaultBodygroups = "00000000"
 
-SWEP.Damage				=	20
-SWEP.DamageMin			=	17
+SWEP.Damage				=	17
+SWEP.DamageMin			=	9
 SWEP.RangeMin			=	10
 SWEP.Range				=	30
 SWEP.Penetration		=	5
@@ -39,8 +39,8 @@ SWEP.BodyDamageMults	=	ArcCW.EM.BodyDamageMults
 SWEP.Recoil			=	1.0
 SWEP.RecoilSide		=	0.5
 
-SWEP.ShellModel		=	"models/shells/shell_9mm.mdl"
-SWEP.ShellScale		=	1.334
+SWEP.ShellModel		=	"models/shells/shell_12gauge.mdl"
+SWEP.ShellScale		=	1
 SWEP.ShellPitch		=	100
 SWEP.ShellSounds	=	"autocheck"
 
@@ -56,8 +56,8 @@ SWEP.JumpDispersion		=	1000
 SWEP.AccuracyMOA		=	40
 SWEP.SightTime			=	0.2
 SWEP.Primary.ClipSize	=	6
-SWEP.ChamberSize		=	1
-SWEP.MuzzleEffect		=	"muzzleflash_mp5"
+SWEP.ChamberSize		=	0
+SWEP.MuzzleEffect		=	"muzzleflash_shotgun"
 SWEP.NoFlash			=	true--ArcCW.CSX.NoFlash
 
 SWEP.ShootSound			=	{
@@ -97,10 +97,11 @@ SWEP.IronSightStruct = {
 	CrosshairInSights = true,
 }
 
-SWEP.Delay = (60/600)
+SWEP.Delay = (60/60)
 SWEP.Firemodes = {
 	{
-		Mode = 2,
+		Mode = 1,
+		PrintName = "Pump-action"
 	},
 	{
 		Mode = 0,
@@ -133,23 +134,37 @@ SWEP.Animations = {
 	},
 	["fire"] = {
 		Source = "fire",
-		ShellEjectAt = 0,
-	},
-	["reload"] = {
-		Source = "reload",
 		Time = 1,
-		MinProgress = 0.5,
+		ShellEjectAt = 0.5,
 		SoundTable = {
+			{ s = "weapons/awp/awp_clipin.wav", t = 0.5 }
 		}
 	},
-	["reload_empty"] = {
-		Source = "reload_empty",
-		Time = 1,
-		MinProgress = 0.5,
+	["sgreload_start"] = {
+		Source = "reload",
+		Time = 0.3,
 		SoundTable = {
+			{ s = "weapons/smg1/switch_burst.wav", t = 0.0 }
+		}
+	},
+	["sgreload_insert"] = {
+		Source = "reload",
+		Time = 0.2,
+		MinProgress = 0.1,
+		ShellEjectAt = 0,
+		SoundTable = {
+			{ s = "weapons/shotgun/shotgun_reload2.wav", t = 0.0 },
+		}
+	},
+	["sgreload_finish"] = {
+		Source = "reload",
+		Time = 0.2,
+		SoundTable = {
+			{ s = "weapons/awp/awp_clipin.wav", t = 0.0 }
 		}
 	},
 }
+SWEP.ShotgunReload = true
 
 SWEP.Attachments = {
 }

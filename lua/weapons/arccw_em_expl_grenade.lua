@@ -4,7 +4,7 @@ SWEP.Spawnable		=	true
 SWEP.Category		=	"ArcCW - Everyman"
 SWEP.PrintName		=	"Explosive, grenade"
 SWEP.Trivia_Class			= "Explosive weapon"
-SWEP.Trivia_Desc			= "A six-shot grenade launcher launching high-explosive impact grenades. Useful against targets behind cover or in open areas. Does do damage against vehicles, but not as much as a dedicated rocket launcher or anti-material rifle."
+SWEP.Trivia_Desc			= "A six-shot pump-action grenade launcher launching high-explosive impact grenades. Useful against targets behind cover or in open areas. Does do damage against vehicles, but not as much as a dedicated rocket launcher or anti-material rifle."
 SWEP.Trivia_Manufacturer	= nil
 SWEP.Trivia_Calibre			= nil
 SWEP.Trivia_Mechanism		= nil
@@ -16,8 +16,8 @@ SWEP.SlotPos		=	0
 
 SWEP.UseHands		=	false
 SWEP.ViewModelFOV	=	75
-SWEP.ViewModel		=	"models/weapons/w_rif_aks74u.mdl"
-SWEP.WorldModel		=	"models/weapons/w_rif_aks74u.mdl"
+SWEP.ViewModel		=	"models/weapons/w_eq_m32_scopeless.mdl"
+SWEP.WorldModel		=	"models/weapons/w_eq_m32_scopeless.mdl"
 SWEP.ActivePos = Vector(4.5, 12, -11)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
@@ -36,8 +36,8 @@ SWEP.Penetration		=	5
 SWEP.Primary.Ammo		=	"pistol"
 SWEP.BodyDamageMults	=	ArcCW.EM.BodyDamageMults
 
-SWEP.Recoil			=	1.0
-SWEP.RecoilSide		=	0.5
+SWEP.Recoil			=	2.0
+SWEP.RecoilSide		=	2.5
 
 SWEP.ShellModel		=	"models/shells/shell_9mm.mdl"
 SWEP.ShellScale		=	1.334
@@ -93,10 +93,11 @@ SWEP.IronSightStruct = {
 	CrosshairInSights = true,
 }
 
-SWEP.Delay = (60/45)
+SWEP.Delay = (60/40)
 SWEP.Firemodes = {
 	{
 		Mode = 1,
+		PrintName = "Pump-action"
 	},
 	{
 		Mode = 0,
@@ -129,23 +130,37 @@ SWEP.Animations = {
 	},
 	["fire"] = {
 		Source = "fire",
-		ShellEjectAt = 0,
-	},
-	["reload"] = {
-		Source = "reload",
 		Time = 1,
-		MinProgress = 0.5,
+		ShellEjectAt = 0,
 		SoundTable = {
+			{ s = "weapons/p90/p90_boltpull.wav", t = 0.5, p = 80 },
 		}
 	},
-	["reload_empty"] = {
-		Source = "reload_empty",
-		Time = 1,
-		MinProgress = 0.5,
+	["sgreload_start"] = {
+		Source = "reload",
+		Time = 0.5,
+		SoundTable = {
+			{ s = "weapons/357/357_reload1.wav", t = 0.1 },
+		}
+	},
+	["sgreload_insert"] = {
+		Source = "reload",
+		Time = 0.75,
+		MinProgress = 0.3,
+		ShellEjectAt = 0,
+		SoundTable = {
+			{ s = "weapons/357/357_reload4.wav", t = 0.0 },
+			{ s = "weapons/p90/p90_clipin.wav", t = 0.3 },
+		}
+	},
+	["sgreload_finish"] = {
+		Source = "reload",
+		Time = 0.25,
 		SoundTable = {
 		}
 	},
 }
+SWEP.ShotgunReload = true
 
 SWEP.Attachments = {
 }

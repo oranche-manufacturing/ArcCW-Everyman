@@ -18,7 +18,7 @@ SWEP.UseHands		=	false
 SWEP.ViewModelFOV	=	75
 SWEP.ViewModel		=	"models/weapons/w_smg_zbr08.mdl"
 SWEP.WorldModel		=	"models/weapons/w_smg_zbr08.mdl"
-SWEP.ActivePos = Vector(4.5, 11, -8)
+SWEP.ActivePos = Vector(4.5, 11, -9)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.HolsterPos = Vector(2.5, 12, -8)
@@ -28,7 +28,7 @@ SWEP.ReloadPos = Vector(4.5, 11, -8)
 SWEP.ReloadAng = Angle(-25, 0, 0)
 SWEP.DefaultBodygroups = "00000000"
 
-SWEP.Damage				=	32
+SWEP.Damage				=	24
 SWEP.DamageMin			=	20
 SWEP.RangeMin			=	10
 SWEP.Range				=	30
@@ -89,7 +89,7 @@ SWEP.AttachmentElements = {}
 SWEP.Animations = {}
 
 SWEP.IronSightStruct = {
-	Pos = Vector(2, 8, -7),
+	Pos = Vector(2, 8, -8.5),
 	Ang = Angle(0, 0, 0),
 	ViewModelFOV = 75,
 	Magnification = 0.7,

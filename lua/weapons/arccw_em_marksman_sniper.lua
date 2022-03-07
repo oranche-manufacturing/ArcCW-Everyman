@@ -130,23 +130,39 @@ SWEP.Animations = {
 	},
 	["fire"] = {
 		Source = "fire",
-		ShellEjectAt = 0,
-	},
-	["reload"] = {
-		Source = "reload",
 		Time = 1,
-		MinProgress = 0.5,
+		ShellEjectAt = 0.75,
 		SoundTable = {
+			{ s = "weapons/357/357_reload1.wav", t = 0.75 },
 		}
 	},
-	["reload_empty"] = {
-		Source = "reload_empty",
-		Time = 1,
-		MinProgress = 0.5,
+	["fire_last"] = {
+		Source = "fire_last",
+	},
+	["sgreload_start"] = {
+		Source = "reload",
+		Time = 0.25,
+		ShellEjectAt = 0,
+		SoundTable = {
+			{ s = "weapons/357/357_reload3.wav", t = 0.0 },
+		}
+	},
+	["sgreload_insert"] = {
+		Source = "reload",
+		Time = 0.5,
+		MinProgress = 0.2,
+		SoundTable = {
+			{ s = "weapons/357/357_reload4.wav", t = 0.2 },
+		}
+	},
+	["sgreload_finish"] = {
+		Source = "reload",
+		Time = 0.25,
 		SoundTable = {
 		}
 	},
 }
+SWEP.ShotgunReload = true
 
 SWEP.Attachments = {
 }

@@ -21,7 +21,7 @@ SWEP.WorldModel		=	"models/weapons/w_shot_sxs_shorty.mdl"
 SWEP.ActivePos = Vector(-4, -6, 0)
 SWEP.ActiveAng = Angle(10, 183, 0)
 
-SWEP.HolsterPos = Vector(2.5, 12, -8)
+SWEP.HolsterPos = Vector(-2.5, 12, -8)
 SWEP.HolsterAng = Angle(-5, 180, 0)
 
 SWEP.ReloadPos = Vector(-3, -4, -3)
@@ -101,6 +101,7 @@ SWEP.Delay = (60/1200)
 SWEP.Firemodes = {
 	{
 		Mode = 1,
+		PrintName = "Break-action"
 	},
 	{
 		Mode = 0,

@@ -16,16 +16,16 @@ SWEP.SlotPos		=	0
 
 SWEP.UseHands		=	false
 SWEP.ViewModelFOV	=	75
-SWEP.ViewModel		=	"models/weapons/w_rif_aks74u.mdl"
-SWEP.WorldModel		=	"models/weapons/w_rif_aks74u.mdl"
+SWEP.ViewModel		=	"models/weapons/w_eq_law.mdl"
+SWEP.WorldModel		=	"models/weapons/w_eq_law.mdl"
 SWEP.ActivePos = Vector(4.5, 12, -11)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.HolsterPos = Vector(2.5, 13, -11)
 SWEP.HolsterAng = Angle(-5, 0, 0)
 
-SWEP.ReloadPos = Vector(4.5, 12, -11)
-SWEP.ReloadAng = Angle(-25, 0, 0)
+SWEP.ReloadPos = Vector(34.5, 12, 4)
+SWEP.ReloadAng = Angle(-25, 0, 45)
 SWEP.DefaultBodygroups = "00000000"
 
 SWEP.Damage				=	20
@@ -39,8 +39,8 @@ SWEP.BodyDamageMults	=	ArcCW.EM.BodyDamageMults
 SWEP.Recoil			=	1.0
 SWEP.RecoilSide		=	0.5
 
-SWEP.ShellModel		=	"models/shells/shell_9mm.mdl"
-SWEP.ShellScale		=	1.334
+SWEP.ShellModel		=	"models/weapons/w_eq_law.mdl"
+SWEP.ShellScale		=	1
 SWEP.ShellPitch		=	100
 SWEP.ShellSounds	=	"autocheck"
 
@@ -78,7 +78,7 @@ SWEP.ShootPitch				=	100
 SWEP.ShootPitchVariation	=	0--.05
 
 SWEP.MuzzleEffectAttachment	=	1
-SWEP.CaseEffectAttachment	=	2
+SWEP.CaseEffectAttachment	=	1
 SWEP.CamAttachment			=	nil
 
 SWEP.Attachments = {}
@@ -93,10 +93,11 @@ SWEP.IronSightStruct = {
 	CrosshairInSights = true,
 }
 
-SWEP.Delay = (60/30)
+SWEP.Delay = (60/600)
 SWEP.Firemodes = {
 	{
 		Mode = 1,
+		PrintName = "Single-shot"
 	},
 	{
 		Mode = 0,
@@ -129,20 +130,15 @@ SWEP.Animations = {
 	},
 	["fire"] = {
 		Source = "fire",
-		ShellEjectAt = 0,
 	},
 	["reload"] = {
 		Source = "reload",
-		Time = 1,
-		MinProgress = 0.5,
+		Time = 3,
+		MinProgress = 2.5,
+		ShellEjectAt = 0.25,
 		SoundTable = {
-		}
-	},
-	["reload_empty"] = {
-		Source = "reload_empty",
-		Time = 1,
-		MinProgress = 0.5,
-		SoundTable = {
+			{ s = "physics/metal/weapon_impact_hard3.wav", t = 0.25 },
+			{ s = "weapons/sniper/sniper_zoomin.wav", t = 3 },
 		}
 	},
 }

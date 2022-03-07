@@ -29,12 +29,12 @@ SWEP.ReloadAng = Angle(-25, 0, 0)
 SWEP.DefaultBodygroups = "00000000"
 
 SWEP.Damage				=	32
-SWEP.DamageMin			=	20
+SWEP.DamageMin			=	25
 SWEP.RangeMin			=	10
 SWEP.Range				=	30
 SWEP.Penetration		=	4
 SWEP.Primary.Ammo		=	"pistol"
-SWEP.BodyDamageMults	=	ArcCW.EM.BodyDamageMults
+SWEP.BodyDamageMults	=	ArcCW.EM.BodyDamageMults_Stealth
 
 SWEP.Recoil			=	1.0
 SWEP.RecoilSide		=	0.5
@@ -137,15 +137,20 @@ SWEP.Animations = {
 	["reload"] = {
 		Source = "reload",
 		Time = 1,
-		MinProgress = 0.5,
+		MinProgress = 0.75,
 		SoundTable = {
+			{ s = "weapons/elite/elite_clipout.wav", t = 0.25 },
+			{ s = "weapons/elite/elite_rightclipin.wav", t = 0.75 },
 		}
 	},
 	["reload_empty"] = {
 		Source = "reload_empty",
-		Time = 1,
-		MinProgress = 0.5,
+		Time = 1.5,
+		MinProgress = 1.25,
 		SoundTable = {
+			{ s = "weapons/elite/elite_clipout.wav", t = 0.25 },
+			{ s = "weapons/elite/elite_rightclipin.wav", t = 0.75 },
+			{ s = "weapons/fiveseven/fiveseven_slidepull.wav", t = 1.25 },
 		}
 	},
 }

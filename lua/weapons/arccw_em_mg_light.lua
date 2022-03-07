@@ -142,13 +142,10 @@ SWEP.Animations = {
 		Time = 3,
 		MinProgress = 2.5,
 		SoundTable = {
-		}
-	},
-	["reload_empty"] = {
-		Source = "reload_empty",
-		Time = 3,
-		MinProgress = 2.5,
-		SoundTable = {
+			{ s = "weapons/smg1/switch_burst.wav", t = 0, p = 90 },
+			{ s = "weapons/tmp/tmp_clipout.wav", t = 0.4, p = 90 },
+			{ s = "weapons/sg550/sg550_clipin.wav", t = 1.2, p = 90 },
+			{ s = "weapons/galil/galil_boltpull.wav", t = 2.5, p = 95 },
 		}
 	},
 }

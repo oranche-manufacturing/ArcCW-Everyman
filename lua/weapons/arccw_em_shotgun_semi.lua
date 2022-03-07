@@ -18,7 +18,7 @@ SWEP.UseHands		=	false
 SWEP.ViewModelFOV	=	75
 SWEP.ViewModel		=	"models/weapons/w_shot_xm1014.mdl"
 SWEP.WorldModel		=	"models/weapons/w_shot_xm1014.mdl"
-SWEP.ActivePos = Vector(4.5, 12, -11)
+SWEP.ActivePos = Vector(4.5, 12, -10)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.HolsterPos = Vector(2.5, 13, -11)
@@ -28,8 +28,8 @@ SWEP.ReloadPos = Vector(4.5, 12, -11)
 SWEP.ReloadAng = Angle(-25, 0, 0)
 SWEP.DefaultBodygroups = "00000000"
 
-SWEP.Damage				=	20
-SWEP.DamageMin			=	17
+SWEP.Damage				=	6
+SWEP.DamageMin			=	2
 SWEP.RangeMin			=	10
 SWEP.Range				=	30
 SWEP.Penetration		=	5
@@ -55,8 +55,8 @@ SWEP.MoveDispersion		=	400
 SWEP.JumpDispersion		=	1000
 SWEP.AccuracyMOA		=	60
 SWEP.SightTime			=	0.2
-SWEP.Primary.ClipSize	=	6
-SWEP.ChamberSize		=	1
+SWEP.Primary.ClipSize	=	4
+SWEP.ChamberSize		=	0
 SWEP.MuzzleEffect		=	"muzzleflash_mp5"
 SWEP.NoFlash			=	true--ArcCW.CSX.NoFlash
 
@@ -90,7 +90,7 @@ SWEP.AttachmentElements = {}
 SWEP.Animations = {}
 
 SWEP.IronSightStruct = {
-	Pos = Vector(3, 10, -10.5),
+	Pos = Vector(3, 10, -9),
 	Ang = Angle(0, 0, 0),
 	ViewModelFOV = 75,
 	Magnification = 0.7,
@@ -100,7 +100,7 @@ SWEP.IronSightStruct = {
 SWEP.Delay = (60/600)
 SWEP.Firemodes = {
 	{
-		Mode = 2,
+		Mode = 1,
 	},
 	{
 		Mode = 0,
@@ -135,21 +135,31 @@ SWEP.Animations = {
 		Source = "fire",
 		ShellEjectAt = 0,
 	},
-	["reload"] = {
+	["sgreload_start"] = {
 		Source = "reload",
-		Time = 1,
-		MinProgress = 0.5,
+		Time = 0.3,
 		SoundTable = {
+			{ s = "weapons/smg1/switch_burst.wav", t = 0.0 }
 		}
 	},
-	["reload_empty"] = {
-		Source = "reload_empty",
-		Time = 1,
-		MinProgress = 0.5,
+	["sgreload_insert"] = {
+		Source = "reload",
+		Time = 0.3,
+		MinProgress = 0.1,
+		ShellEjectAt = 0,
 		SoundTable = {
+			{ s = "weapons/shotgun/shotgun_reload2.wav", t = 0.0 },
+		}
+	},
+	["sgreload_finish"] = {
+		Source = "reload",
+		Time = 0.2,
+		SoundTable = {
+			{ s = "weapons/mp5navy/mp5_slideback.wav", t = 0.0 }
 		}
 	},
 }
+SWEP.ShotgunReload = true
 
 SWEP.Attachments = {
 }

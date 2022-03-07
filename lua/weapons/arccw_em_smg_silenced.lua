@@ -57,20 +57,20 @@ SWEP.MuzzleEffect		=	"muzzleflash_mp5"
 SWEP.NoFlash			=	true--ArcCW.CSX.NoFlash
 
 SWEP.ShootSound			=	{
-	"em/pistol/fire-01.ogg",
-	"em/pistol/fire-02.ogg",
-	"em/pistol/fire-03.ogg",
-	"em/pistol/fire-04.ogg",
-	"em/pistol/fire-05.ogg",
-	"em/pistol/fire-06.ogg"
+	"em/pistol_silenced/fire-01.ogg",
+	"em/pistol_silenced/fire-02.ogg",
+	"em/pistol_silenced/fire-03.ogg",
+	"em/pistol_silenced/fire-04.ogg",
+	"em/pistol_silenced/fire-05.ogg",
+	"em/pistol_silenced/fire-06.ogg"
 }
 SWEP.DistantShootSound	=	{
-	"em/pistol-tail-01.ogg",
-	"em/pistol-tail-02.ogg",
-	"em/pistol-tail-03.ogg",
-	"em/pistol-tail-04.ogg",
-	"em/pistol-tail-05.ogg",
-	"em/pistol-tail-06.ogg"
+	"em/pistol_silenced-tail-01.ogg",
+	"em/pistol_silenced-tail-02.ogg",
+	"em/pistol_silenced-tail-03.ogg",
+	"em/pistol_silenced-tail-04.ogg",
+	"em/pistol_silenced-tail-05.ogg",
+	"em/pistol_silenced-tail-06.ogg"
 }
 
 SWEP.ShootVol				=	90

@@ -18,7 +18,7 @@ SWEP.UseHands		=	false
 SWEP.ViewModelFOV	=	75
 SWEP.ViewModel		=	"models/weapons/w_smg_miniuzi.mdl"
 SWEP.WorldModel		=	"models/weapons/w_smg_miniuzi.mdl"
-SWEP.ActivePos = Vector(4.5, 11, -6)
+SWEP.ActivePos = Vector(4.5, 8, -5)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.HolsterPos = Vector(2.5, 12, -6)
@@ -89,7 +89,7 @@ SWEP.AttachmentElements = {}
 SWEP.Animations = {}
 
 SWEP.IronSightStruct = {
-	Pos = Vector(2, 8, -8.5),
+	Pos = Vector(2, 5, -5),
 	Ang = Angle(0, 0, 0),
 	ViewModelFOV = 75,
 	Magnification = 0.7,
@@ -139,13 +139,18 @@ SWEP.Animations = {
 		Time = 1,
 		MinProgress = 0.5,
 		SoundTable = {
+			{ s = "weapons/galil/galil_clipout.wav", t = 0.25 },
+			{ s = "weapons/galil/galil_clipin.wav", t = 0.75 },
 		}
 	},
 	["reload_empty"] = {
 		Source = "reload_empty",
-		Time = 1,
-		MinProgress = 0.5,
+		Time = 1.5,
+		MinProgress = 1.25,
 		SoundTable = {
+			{ s = "weapons/galil/galil_clipout.wav", t = 0.25 },
+			{ s = "weapons/galil/galil_clipin.wav", t = 0.75 },
+			{ s = "weapons/awp/awp_bolt.wav", t = 1.25, p = 120 },
 		}
 	},
 }

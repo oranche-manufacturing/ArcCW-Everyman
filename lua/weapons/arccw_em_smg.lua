@@ -18,13 +18,13 @@ SWEP.UseHands		=	false
 SWEP.ViewModelFOV	=	75
 SWEP.ViewModel		=	"models/weapons/w_thompson.mdl"
 SWEP.WorldModel		=	"models/weapons/w_thompson.mdl"
-SWEP.ActivePos = Vector(4.5, 20, -11)
+SWEP.ActivePos = Vector(4.5, 18, -10)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.HolsterPos = Vector(2.5, 13, -11)
+SWEP.HolsterPos = Vector(2.5, 18, -11)
 SWEP.HolsterAng = Angle(-5, 0, 0)
 
-SWEP.ReloadPos = Vector(4.5, 12, -11)
+SWEP.ReloadPos = Vector(4.5, 18, -11)
 SWEP.ReloadAng = Angle(-25, 0, 0)
 SWEP.DefaultBodygroups = "00000000"
 
@@ -86,7 +86,7 @@ SWEP.AttachmentElements = {}
 SWEP.Animations = {}
 
 SWEP.IronSightStruct = {
-	Pos = Vector(3, 10, -10.5),
+	Pos = Vector(3, 15, -10),
 	Ang = Angle(0, 0, 0),
 	ViewModelFOV = 75,
 	Magnification = 0.7,

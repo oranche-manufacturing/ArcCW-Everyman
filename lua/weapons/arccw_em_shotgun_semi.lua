@@ -146,7 +146,6 @@ SWEP.Animations = {
 		Source = "reload",
 		Time = 0.3,
 		MinProgress = 0.1,
-		ShellEjectAt = 0,
 		SoundTable = {
 			{ s = "weapons/shotgun/shotgun_reload2.wav", t = 0.0 },
 		}

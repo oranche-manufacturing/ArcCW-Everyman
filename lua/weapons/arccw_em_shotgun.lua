@@ -18,13 +18,13 @@ SWEP.UseHands		=	false
 SWEP.ViewModelFOV	=	75
 SWEP.ViewModel		=	"models/weapons/w_shot_r870.mdl"
 SWEP.WorldModel		=	"models/weapons/w_shot_r870.mdl"
-SWEP.ActivePos = Vector(4.5, 12, -11)
+SWEP.ActivePos = Vector(4.5, 2, -8)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.HolsterPos = Vector(2.5, 13, -11)
+SWEP.HolsterPos = Vector(2.5, 3, -11)
 SWEP.HolsterAng = Angle(-5, 0, 0)
 
-SWEP.ReloadPos = Vector(4.5, 12, -11)
+SWEP.ReloadPos = Vector(4.5, 2, -11)
 SWEP.ReloadAng = Angle(-25, 0, 0)
 SWEP.DefaultBodygroups = "00000000"
 
@@ -90,7 +90,7 @@ SWEP.AttachmentElements = {}
 SWEP.Animations = {}
 
 SWEP.IronSightStruct = {
-	Pos = Vector(3, 10, -10.5),
+	Pos = Vector(3, -3, -6.5),
 	Ang = Angle(0, 0, 0),
 	ViewModelFOV = 75,
 	Magnification = 0.7,
@@ -151,7 +151,6 @@ SWEP.Animations = {
 		Source = "reload",
 		Time = 0.2,
 		MinProgress = 0.1,
-		ShellEjectAt = 0,
 		SoundTable = {
 			{ s = "weapons/shotgun/shotgun_reload2.wav", t = 0.0 },
 		}

@@ -60,12 +60,12 @@ SWEP.MuzzleEffect		=	"muzzleflash_mp5"
 SWEP.NoFlash			=	true--ArcCW.CSX.NoFlash
 
 SWEP.ShootSound			=	{
-	"em/pistol/fire-01.ogg",
-	"em/pistol/fire-02.ogg",
-	"em/pistol/fire-03.ogg",
-	"em/pistol/fire-04.ogg",
-	"em/pistol/fire-05.ogg",
-	"em/pistol/fire-06.ogg"
+	"em/rifle/fire-01.ogg",
+	"em/rifle/fire-02.ogg",
+	"em/rifle/fire-03.ogg",
+	"em/rifle/fire-04.ogg",
+	"em/rifle/fire-05.ogg",
+	"em/rifle/fire-06.ogg"
 }
 SWEP.DistantShootSound	=	{
 	"em/pistol-tail-01.ogg",
@@ -77,7 +77,7 @@ SWEP.DistantShootSound	=	{
 }
 
 SWEP.ShootVol				=	90
-SWEP.ShootPitch				=	100
+SWEP.ShootPitch				=	80
 SWEP.ShootPitchVariation	=	0--.05
 
 SWEP.MuzzleEffectAttachment	=	1

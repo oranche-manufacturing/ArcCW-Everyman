@@ -28,15 +28,15 @@ SWEP.ReloadPos = Vector(4.5, 12, -11)
 SWEP.ReloadAng = Angle(-25, 0, 0)
 SWEP.DefaultBodygroups = "00000000"
 
-SWEP.Damage				=	20
-SWEP.DamageMin			=	17
-SWEP.RangeMin			=	10
-SWEP.Range				=	30
-SWEP.Penetration		=	20
+SWEP.Damage				=	200
+SWEP.DamageMin			=	100
+SWEP.RangeMin			=	50
+SWEP.Range				=	100
+SWEP.Penetration		=	30
 SWEP.Primary.Ammo		=	"ar2"
 SWEP.BodyDamageMults	=	ArcCW.EM.BodyDamageMults
 
-SWEP.Recoil			=	1.0
+SWEP.Recoil			=	5.0
 SWEP.RecoilSide		=	0.5
 
 SWEP.ShellModel		=	"models/shells/shell_762nato.mdl"

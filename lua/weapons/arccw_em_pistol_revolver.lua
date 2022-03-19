@@ -28,11 +28,11 @@ SWEP.ReloadPos = Vector(13.5, -11, -7)
 SWEP.ReloadAng = Angle(-25, 180, -75)
 SWEP.DefaultBodygroups = "00000000"
 
-SWEP.Damage				=	32
-SWEP.DamageMin			=	20
-SWEP.RangeMin			=	10
-SWEP.Range				=	30
-SWEP.Penetration		=	10
+SWEP.Damage				=	64
+SWEP.DamageMin			=	32
+SWEP.RangeMin			=	20
+SWEP.Range				=	60
+SWEP.Penetration		=	15
 SWEP.Primary.Ammo		=	"357"
 SWEP.BodyDamageMults	=	ArcCW.EM.BodyDamageMults
 
